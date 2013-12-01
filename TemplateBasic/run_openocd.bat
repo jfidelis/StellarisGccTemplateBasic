@@ -1,0 +1,1 @@
+openocd-x64-0.7.0 -f ek-lm4f120xl.cfg
