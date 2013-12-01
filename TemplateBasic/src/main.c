@@ -165,7 +165,7 @@ main(void)
     GPIOPinConfigure(GPIO_PA1_U0TX);
     ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
     UARTStdioInit(0);
-    UARTprintf("\033[2JTimers example\n");
+    UARTprintf("\033[2JDemo Timers example\n");
     UARTprintf("T1: 0  T2: 0");
 
     //
@@ -196,7 +196,7 @@ main(void)
     ROM_TimerConfigure(TIMER0_BASE, TIMER_CFG_PERIODIC);
     ROM_TimerConfigure(TIMER1_BASE, TIMER_CFG_PERIODIC);
     ROM_TimerLoadSet(TIMER0_BASE, TIMER_A, ROM_SysCtlClockGet());
-    ROM_TimerLoadSet(TIMER1_BASE, TIMER_A, ROM_SysCtlClockGet() / 2);
+    ROM_TimerLoadSet(TIMER1_BASE, TIMER_A, ROM_SysCtlClockGet() / 4);
 
     //
     // Setup the interrupts for the timer timeouts.
