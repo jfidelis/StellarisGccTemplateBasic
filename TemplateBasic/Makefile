@@ -70,4 +70,6 @@ install: $(TARGET)
 clean:
 	@echo
 	@echo Cleaning...
-	rm src/*.o src/*.d bin/*
+	rmnew src/*.o
+	rmnew src/*.d 
+	rmnew bin/* 
